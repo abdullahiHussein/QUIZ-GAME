@@ -259,6 +259,11 @@ function App() {
     text: "42",
     correct: false
   },
+  
+  {
+    text: "60",
+    correct: true
+  },
   {
     text: "49",
     correct: false
@@ -267,10 +272,6 @@ function App() {
     text: "47",
     correct: false
   },
-  {
-    text: "60",
-    correct: true
-  }
 ]
 },
 {
@@ -304,6 +305,10 @@ function App() {
     correct: false
   },
   {
+    text: "96",
+    correct: true
+  },
+  {
     text: "49",
     correct: false
   },
@@ -311,10 +316,7 @@ function App() {
     text: "47",
     correct: false
   },
-  {
-    text: "96",
-    correct: true
-  }
+
 ]
 },
 
@@ -322,6 +324,10 @@ function App() {
   id: 12,
   question: "9 x 7",
   answers: [
+  {
+    text: "63",
+    correct: true
+  },
   {
     text: "42",
     correct: false
@@ -334,10 +340,7 @@ function App() {
     text: "47",
     correct: false
   },
-  {
-    text: "63",
-    correct: true
-  },
+ 
 ]
 }
   
