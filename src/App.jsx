@@ -76,7 +76,7 @@ function App() {
   },
   {
     id: 4,
-    question: "what is the capital city of Ethiopia?",
+    question: "what is the capital city of Spain?",
     answers: [
     {
       text: "Mogadishu",
@@ -88,11 +88,11 @@ function App() {
     },
     {
       text: "Addis Ababa",
-      correct: true
+      correct: false
     },
     {
-      text: "Kismayo",
-      correct: false
+      text: "Madrid",
+      correct: true
     },
   ]
 },{
@@ -130,13 +130,14 @@ function App() {
     correct: false
   },
   {
+    text: "Madrid",
+    correct: false
+  },
+  {
     text: "Paris",
     correct: true
   },
-  {
-    text: "Kismayo",
-    correct: false
-  },
+ 
 ]
 },
 {
