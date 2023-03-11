@@ -3,10 +3,20 @@ import { useEffect, useMemo, useState } from "react";
 import "./app.css"
 import Timer from "./components/Timer";
 import Trivia from "./components/Trivia";
+import useSound from "use-sound";
+import correct from "./assets/correct-answer.wav";
+import wrong from "./assets/correct-answer.wav";
+
 function App() {
   const[questionNumber, setQuestionNumber] = useState(1);
-  const[stop, setStop] = useState(false)
-  const[earned, setEarned] = useState("£ 0")
+  const[stop, setStop] = useState(false);
+  const[earned, setEarned] = useState("£ 0");
+  const[letUsPlay] =useSound(correct);
+  
+  useEffect(() => {
+      letUsPlay();
+  }, [letUsPlay]);
+  
   const data = [
     {
       id: 1,
@@ -395,6 +405,7 @@ function App() {
         ))}
       </ul>
       </div>
+      
     </div>
   );
 }
